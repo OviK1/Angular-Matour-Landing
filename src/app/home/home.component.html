@@ -1,0 +1,267 @@
+<section class="banner">
+  <mat-toolbar class="toolbar">
+    <div class="toolbar-content">
+      <a href="/" mat-button>Home</a>
+      <a href="#about" mat-button>About Us</a>
+      <a href="#destination" mat-button>Destination</a>
+      <a href="#blog" mat-button>Blog</a>
+      <a href="#contact" mat-button>Contact</a>
+    </div>
+  </mat-toolbar>
+  <div class="banner-content">
+    <h1 class="banner-heading">Explore The Majestic Asia Landscape Now</h1>
+    <p class="banner-sub">Feel the experience. Start your adventure today.</p>
+    <button mat-raised-button class="banner-btn">Get Started</button>
+  </div>
+  <div class="banner-icons">
+    <a href="https://facebook.com" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+</section>
+
+<section id="destination" class="section">
+  <div class="destination-container">
+    <div class="destination-heading">
+      <h2>Destinations</h2>
+    </div>
+    <div class="destination-cards">
+      <div *ngFor="let tour of destinationsArray" class="card">
+        <mat-card
+          appearance="outlined"
+          [ngStyle]="{ 'background-image': 'url(' + tour?.image + ')' }"
+        >
+          <div class="mat-card-content-position">
+            <mat-card-header>{{ tour.title }}</mat-card-header>
+            <mat-card-content>{{ tour.location }}</mat-card-content>
+            <mat-card-actions>
+              <button mat-button>
+                <mat-icon>arrow_forward</mat-icon>
+              </button>
+            </mat-card-actions>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="section">
+  <div class="blog-container">
+    <div class="left-content">
+      <h1>Experience The New Adventure</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iste
+        qui reprehenderit ullam consequuntur doloribus, hic fugiat, excepturi
+        nisi soluta enim cum voluptatem beatae voluptatum? Laboriosam dolorem
+        nisi reprehenderit vero!
+      </p>
+      <div>
+        <h3>Safe Travelling</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam,
+          quod vero recusandae, autem provident nobis pariatur harum eum
+          repellat ut, accusantium nulla modi.
+        </p>
+      </div>
+      <div>
+        <h3>Affordable Price</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam,
+          quod vero recusandae, autem provident nobis pariatur harum eum
+          repellat ut, accusantium nulla modi.
+        </p>
+      </div>
+      <div>
+        <h3>Comfort Accommodation</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam,
+          quod vero recusandae, autem provident nobis pariatur harum eum
+          repellat ut, accusantium nulla modi.
+        </p>
+      </div>
+    </div>
+    <div class="blog-right">
+      <div class="blog-image-container">
+        <img class="blog-image" src="../../assets/blog.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="black-section">
+  <div class="blk-sec-content">
+    <div class="blk-sec-left">
+      <h1>Discover A Mesmerizing Nature Landscape & Stunning Culture</h1>
+    </div>
+    <div class="bkl-sec-right">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sit
+        soluta inventore porro iusto, quasi eligendi autem sint nisi! Harum
+        temporibus at earum sequi accusamus omnis quis nulla quaerat cumque.
+      </p>
+      <button mat-raised-button class="bkl-sec-btn">LEARN MORE</button>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="about-container">
+    <div class="left-content">
+      <h1>About Us</h1>
+      <p>
+        At Matour, we are passionate about creating unforgettable travel
+        experiences. With a team of dedicated travel enthusiasts, we help you
+        explore the world in a unique and meaningful way.
+      </p>
+      <p>
+        Our mission is to bring you closer to the breathtaking beauty of nature
+        and the diverse cultures around the globe. From serene beaches to
+        majestic mountains, every journey with us is crafted to inspire and
+        excite.
+      </p>
+      <button mat-raised-button class="about-btn" color="primary">
+        Learn More
+      </button>
+    </div>
+    <div class="about-right">
+      <div class="about-image-container">
+        <img class="about-image" src="../../assets/juhu-beach.jpeg" alt="" />
+      </div>
+      <div class="about-transition">
+        <div class="transition-fun">
+          <div class="transition-img">
+            <img src="../../assets/blog.jpg" alt="blog" />
+          </div>
+          <div class="transition-img">
+            <img src="../../assets/juhu-beach.jpeg" alt="blog" />
+          </div>
+          <div class="transition-img">
+            <img src="../../assets/landscape.jpeg" alt="blog" />
+          </div>
+          <div class="transition-img">
+            <img src="../../assets/nagav-beach.jpeg" alt="blog" />
+          </div>
+          <div class="transition-img">
+            <img src="../../assets/maldives-beach.jpeg" alt="blog" />
+          </div>
+          <div class="transition-img">
+            <img src="../../assets/contact.avif" alt="blog" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="contact-container">
+    <div class="contact-image-container">
+      <img class="contact-image" src="../../assets/contact.avif" alt="" />
+    </div>
+
+    <div class="contact-right">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out to us for any enquiries or support.</p>
+      <form class="contact-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Your Name</mat-label>
+          <input type="text" matInput placeholder="Enter your name" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Email Address</mat-label>
+          <input type="email" matInput placeholder="Enter your email" />
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Message</mat-label>
+          <textarea matInput placeholder="Type your message here"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <hr />
+      <p>Phone: +91 22 4601 1122</p>
+      <p>Mobile: +91 9769 959 027</p>
+      <p>Email: salestouristo.co.in</p>
+      <p>Address:</p>
+      <address>
+        Shop No 2, E-Wing, Gokul Heaven CHSL, Asha Nagar Road, Thakur Complex,
+        Kandivali East, Mumbai, Maharashtra 400101
+      </address>
+    </div>
+    <div class="footer-contact">
+      <h3>Tour Type</h3>
+      <hr />
+      <ul>
+        <li><a href="#">Budget Tours</a></li>
+        <li><a href="#">Corporate Tours</a></li>
+        <li><a href="#">Family Tours</a></li>
+        <li><a href="#">Group Tours</a></li>
+        <li><a href="#">Honeymoon Tours</a></li>
+        <li><a href="#">Individual Tours</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Trip Type</h3>
+      <hr />
+      <ul>
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Beaches</a></li>
+        <li><a href="#">City Breaks</a></li>
+        <li><a href="#">Historic</a></li>
+        <li><a href="#">Nature</a></li>
+        <li><a href="#">Wildlife</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Subscribe Us</h3>
+      <hr />
+      <p>Don't miss any deal! Subscribe & save on your travel.</p>
+      <form class="footer-form">
+        <label for="name">Name*</label>
+        <input
+          class="footer-subscribe"
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+        />
+        <label for="email">Email*</label>
+        <input
+          class="footer-subscribe"
+          type="text"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <button mat-raised-button>Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <hr />
+  <div>
+    <p>
+      Matour&copy;. All Rights Reserved. 2025–present. Travel Agency | Developed
+      By Parag Satawase Powered by Angular.
+    </p>
+    <a href="#">Privacy Policy</a>
+  </div>
+</footer>
+
+<a href="/" mat-button class="back-to-top">
+  <mat-icon class="arrow-icon">arrow_upward</mat-icon>
+</a>
